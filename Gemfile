@@ -76,6 +76,7 @@ group :test do
   gem "rubocop-performance"
   gem "rubocop-rails"
   gem "selenium-webdriver"
+  gem "slim_lint"
   gem "webdrivers"
 end
 
