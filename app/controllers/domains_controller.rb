@@ -33,6 +33,6 @@ class DomainsController < ApplicationController
   end
 
   def fail?
-    rand(1..3) == 3
+    rand(1..4) == 4
   end
 end
