@@ -72,6 +72,9 @@ end
 group :test do
   # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
   gem "capybara"
+  gem "rubocop"
+  gem "rubocop-performance"
+  gem "rubocop-rails"
   gem "selenium-webdriver"
   gem "webdrivers"
 end

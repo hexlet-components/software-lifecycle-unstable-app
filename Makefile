@@ -19,3 +19,5 @@ compose-production-run-app:
 
 compose-production-console:
 	docker-compose -p rails_bulletin_board_project_ru-production -f docker-compose.production.yml exec app bin/rails console
+
+ci:	lint
