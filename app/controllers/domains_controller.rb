@@ -19,11 +19,11 @@ class DomainsController < ApplicationController
     end
 
     if response.is_a?(Net::HTTPSuccess)
-      redirect_to :root, { notice: 'Pong!' }
+      redirect_to :root, { notice: 'Ура! Сайт успешно проверен и никакой ошибки не произошло' }
       return
     end
 
-    redirect_to :root, flash: { error: 'No pong!' }
+    redirect_to :root, flash: { error: 'Упс! Кажется сайт не отвечает' }
   end
 
   private
@@ -33,6 +33,6 @@ class DomainsController < ApplicationController
   end
 
   def fail?
-    rand(1..4) == 4
+    rand(1..5) == 5
   end
 end

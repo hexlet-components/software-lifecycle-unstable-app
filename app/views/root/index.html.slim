@@ -8,10 +8,13 @@ body.min-vh-100.d-flex.flex-column
       .row
         .col-12.col-md-10.col-lg-8.mx-auto.border.rounded-3.bg-light.p-5
           h1.display-3 Пинг-понг
-          p.lead = "Проверьте доступность сайта"
-          = simple_form_for :domain, url: domains_path, data: { turbo: false } do |f|
-              = f.input :name
-              = f.submit 'Отправить', class: 'btn btn-primary btn-lg text-uppercase'
+          p.lead.text-nowrap
+            | Эта форма проверит сайт на доступность. Конечно, если не ничего не произойдет 🤔
+          = simple_form_for :domain, url: domains_path, data: { turbo: false }, html: { class: :row } do |f|
+              .col-md-8.align-self-center
+                = f.input :name, label: 'Адрес', placeholder: 'https://google.ru/', hint: 'Введите адрес сайта, например https://google.ru/'
+              .col-md-2.align-self-center
+                = f.submit 'Отправить', class: 'btn btn-primary btn-lg text-uppercase'
 
   footer.border-top.py-3.mt-5.flex-shrink-0
     .container-lg
