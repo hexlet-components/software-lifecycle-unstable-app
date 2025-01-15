@@ -43,6 +43,7 @@ jobs:
         uses: docker/build-push-action@v6
         with:
           context: .
+          file: Dockerfile.app
           push: true
           cache-from: ghcr.io/${{ github.repository }}:latest
           cache-to: type=inline
