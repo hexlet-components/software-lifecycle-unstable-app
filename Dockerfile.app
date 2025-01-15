@@ -29,6 +29,6 @@ COPY . .
 
 RUN yarn build
 # NOTE: env for display errors for qa
-RUN RAILS_ENV=development SECRET_KEY_BASE=key_for_build bin/rails assets:precompile
+RUN bin/rails assets:precompile
 
-CMD ["bash", "-c", "bin/rails server -b 0.0.0.0 -p $PORT -e $RAILS_ENV"]
+CMD ["bash", "-c", "make start"]

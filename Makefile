@@ -1,5 +1,6 @@
 start:
-	RAILS_ENV=development bin/dev
+	rm -f tmp/pids/server.pid || true
+	RAILS_ENV=development bin/rails s -b 0.0.0.0
 
 install:
 	bin/setup
