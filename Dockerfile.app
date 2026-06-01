@@ -1,4 +1,4 @@
-FROM ruby:3.1.2-slim
+FROM ruby:4.0.5-slim
 
 RUN apt-get update && apt-get install -y \
   build-essential \
