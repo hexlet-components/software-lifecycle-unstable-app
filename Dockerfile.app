@@ -8,9 +8,9 @@ RUN apt-get update && apt-get install -y \
   curl \
   git
 
-RUN curl -sL https://deb.nodesource.com/setup_18.x | bash -
+RUN curl -sL https://deb.nodesource.com/setup_26.x | bash -
 RUN apt-get install -y nodejs
-RUN npm install --global yarn
+RUN npm install --global pnpm@11
 
 ENV DISABLE_SPRING=1
 ENV RAILS_SERVE_STATIC_FILES=enabled
@@ -21,13 +21,12 @@ COPY Gemfile .
 COPY Gemfile.lock .
 RUN bundle install
 
-COPY package.json .
-COPY yarn.lock .
-RUN yarn install
+COPY package.json pnpm-lock.yaml pnpm-workspace.yaml ./
+RUN pnpm install --frozen-lockfile
 
 COPY . .
 
-RUN yarn build
+RUN pnpm run build
 # NOTE: env for display errors for qa
 RUN bin/rails assets:precompile
 
