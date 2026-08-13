@@ -5,7 +5,8 @@ start:
 install:
 	bin/setup
 
-.PHONY: test
+test:
+	bin/rails test
 
 lint:
 	bundle exec rubocop
@@ -21,4 +22,6 @@ compose-production-run-app:
 compose-production-console:
 	docker-compose -p rails_bulletin_board_project_ru-production -f docker-compose.production.yml exec app bin/rails console
 
-ci:	lint
+ci: lint test
+
+.PHONY: test

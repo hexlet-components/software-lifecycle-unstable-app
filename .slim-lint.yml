@@ -8,5 +8,3 @@ exclude:
 linters:
   LineLength:
     max: 180
-  Style/QuotedSymbols:
-    enabled: false

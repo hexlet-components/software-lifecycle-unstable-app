@@ -8,7 +8,7 @@ class DomainsController < ApplicationController
 
     if domain_name.empty?
       flash.now[:error] = 'Укажите адрес'
-      render 'root/index', status: :unprocessable_entity
+      render 'root/index', status: :unprocessable_content
       return
     end
     uri = URI(domain_params[:name])
@@ -29,7 +29,7 @@ class DomainsController < ApplicationController
   private
 
   def domain_params
-    params.require(:domain).permit(:name)
+    params.expect(domain: [:name])
   end
 
   def fail?
