@@ -26,8 +26,8 @@ gem "turbo-rails"
 # Hotwire's modest JavaScript framework [https://stimulus.hotwired.dev]
 gem "stimulus-rails"
 
-# Bundle and process CSS [https://github.com/rails/cssbundling-rails]
-gem "cssbundling-rails"
+# Стили собирает tailwind [https://github.com/rails/tailwindcss-rails]
+gem "tailwindcss-rails"
 
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 gem "jbuilder"
@@ -76,8 +76,4 @@ group :test do
   gem "rubocop-performance"
   gem "rubocop-rails"
   gem "selenium-webdriver"
-  gem "slim_lint"
 end
-
-gem 'simple_form'
-gem "slim-rails"
