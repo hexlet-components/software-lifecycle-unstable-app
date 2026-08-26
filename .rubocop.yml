@@ -11,6 +11,8 @@ AllCops:
     - 'bin/**'
     - 'code/bin/**'
     - 'code/db/schema.rb'
+    - 'db/schema.rb'
+    - 'db/*_schema.rb'
     - 'code/db/migrate/**'
     - 'code/vendor/**/*'
     - 'code/node_modules/**/*'
