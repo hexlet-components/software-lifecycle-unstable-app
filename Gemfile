@@ -59,6 +59,7 @@ gem "solid_cache"
 gem "solid_queue"
 
 group :development, :test do
+  gem "rubocop-rails-omakase", require: false
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[mri windows]
 end
@@ -77,8 +78,5 @@ end
 group :test do
   # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
   gem "capybara"
-  gem "rubocop"
-  gem "rubocop-performance"
-  gem "rubocop-rails"
   gem "selenium-webdriver"
 end
