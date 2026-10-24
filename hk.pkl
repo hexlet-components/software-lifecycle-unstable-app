@@ -6,6 +6,11 @@ import "package://github.com/jdx/hk/releases/download/v2.8.1/hk@2.8.1#/Builtins.
 // Быстрые проверки идут на каждый коммит. Сеть и долгие шаги вынесены в all:
 // их гоняют check, pre-push и CI.
 local fast = new Mapping<String, Step> {
+  ["rubocop"] {
+    glob = List("**/*.rb", "**/*.rake", "Gemfile", "Rakefile", "*.gemspec")
+    check = "bundle exec rubocop --force-exclusion {{files}}"
+    fix = "bundle exec rubocop --force-exclusion -a {{files}}"
+  }
   ["hadolint"] {
     glob = List("**/Dockerfile*")
     check = "hadolint {{files}}"
