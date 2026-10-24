@@ -8,6 +8,7 @@ RUN apt-get update && apt-get install -y \
   curl \
   git
 
+SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 RUN curl -sL https://deb.nodesource.com/setup_26.x | bash -
 RUN apt-get install -y nodejs
 RUN npm install --global pnpm@12
