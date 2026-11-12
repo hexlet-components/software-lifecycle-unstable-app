@@ -168,7 +168,7 @@ importers:
     dependencies:
       '@herb-tools/linter':
         specifier: ^0.11.1
-        version: 0.11.1(tailwindcss@4.3.3)
+        version: 0.11.1(tailwindcss@4.3.4)
       '@hotwired/stimulus':
         specifier: ^3.2.2
         version: 3.2.2
@@ -179,8 +179,8 @@ importers:
         specifier: ^0.28.2
         version: 0.28.2
       tailwindcss:
-        specifier: ^4.3.3
-        version: 4.3.3
+        specifier: ^4.3.4
+        version: 4.3.4
 
 packages:
 
@@ -506,8 +506,8 @@ packages:
     resolution: {integrity: sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==}
     engines: {node: '>= 0.4'}
 
-  tailwindcss@4.3.3:
-    resolution: {integrity: sha512-gOhV3P7ufE62QDGg1zVaTgCR+EtPv92k2nIhVcVKcLmxT1sUBsQGhnZj175j+MqRt4zLF7ic+sCYjfhxMxj7YQ==}
+  tailwindcss@4.3.4:
+    resolution: {integrity: sha512-PCJZTFFdG+sL3gvnP1Do9o6GbkvH2q0p04xSs3f7cSvmAeK+sttG+/7ncK1fdRwKFfC7n+wDDJaOMBSefkI9ow==}
 
   tinyglobby@0.2.17:
     resolution: {integrity: sha512-wXR/dYpcqKmfWpEdZjiKJOwCNFndD0DMnrW/cYjVGttEkBfVgcLFHoNrlj47mjOVic9yyNu65alsgF4NQyTa2g==}
@@ -626,7 +626,7 @@ snapshots:
       '@herb-tools/node-wasm': 0.11.1
       ansi_up: 6.0.6
 
-  '@herb-tools/linter@0.11.1(tailwindcss@4.3.3)':
+  '@herb-tools/linter@0.11.1(tailwindcss@4.3.4)':
     dependencies:
       '@herb-tools/analysis': 0.11.1(@herb-tools/core@0.11.1)
       '@herb-tools/client': 0.11.1
@@ -635,7 +635,7 @@ snapshots:
       '@herb-tools/highlighter': 0.11.1
       '@herb-tools/node-wasm': 0.11.1
       '@herb-tools/printer': 0.11.1
-      '@herb-tools/rewriter': 0.11.1(tailwindcss@4.3.3)
+      '@herb-tools/rewriter': 0.11.1(tailwindcss@4.3.4)
       '@ruby/prism': 1.9.0
       picomatch: 4.0.7
       postcss: 8.5.31
@@ -656,17 +656,17 @@ snapshots:
       '@herb-tools/node-wasm': 0.11.1
       tinyglobby: 0.2.17
 
-  '@herb-tools/rewriter@0.11.1(tailwindcss@4.3.3)':
+  '@herb-tools/rewriter@0.11.1(tailwindcss@4.3.4)':
     dependencies:
       '@herb-tools/core': 0.11.1
       '@herb-tools/printer': 0.11.1
-      '@herb-tools/tailwind-class-sorter': 0.11.1(tailwindcss@4.3.3)
+      '@herb-tools/tailwind-class-sorter': 0.11.1(tailwindcss@4.3.4)
       '@ruby/prism': 1.9.0
       tinyglobby: 0.2.17
     transitivePeerDependencies:
       - tailwindcss
 
-  '@herb-tools/tailwind-class-sorter@0.11.1(tailwindcss@4.3.3)':
+  '@herb-tools/tailwind-class-sorter@0.11.1(tailwindcss@4.3.4)':
     dependencies:
       clear-module: 4.1.3
       escalade: 3.2.0
@@ -674,7 +674,7 @@ snapshots:
       postcss: 8.5.31
       postcss-import: 17.0.1(postcss@8.5.31)
     optionalDependencies:
-      tailwindcss: 4.3.3
+      tailwindcss: 4.3.4
 
   '@hotwired/stimulus@3.2.2': {}
 
@@ -796,7 +796,7 @@ snapshots:
 
   supports-preserve-symlinks-flag@1.0.0: {}
 
-  tailwindcss@4.3.3: {}
+  tailwindcss@4.3.4: {}
 
   tinyglobby@0.2.17:
     dependencies:
